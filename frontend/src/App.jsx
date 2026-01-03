@@ -7,6 +7,10 @@ import {
   getFaucetContract,
 } from "./utils/contracts";
 import { ethers } from "ethers";
+if (window.location.pathname === "/health") {
+  document.body.innerText = "OK";
+}
+
 
 function App() {
   const [address, setAddress] = useState(null);
